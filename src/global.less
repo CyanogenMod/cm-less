@@ -1,0 +1,45 @@
+body {
+    background-color: @body-background-color;
+}
+
+.loading {
+    position: fixed;
+    top: 20px;
+
+    width: 100%;
+    z-index: 2000;
+
+    text-align: center;
+
+    > span {
+        padding: 5px 9px 5px 10px;
+        background: lighten(@holo-blue, 30%);
+        border: 1px solid @holo-blue;
+        color: darken(@holo-blue, 30%);
+        .box-shadow(0 0 5px rgba(12,67,95,.2));
+
+        > i {
+            color: darken(@holo-blue, 30%);
+            margin-right: 5px;
+        }
+    }
+}
+
+.icon-cid {
+    background: url(/static/img/cid.png) no-repeat center center;
+    display: inline-block;
+
+    width: 15px;
+    height: 14px;
+    background-size: 15px 14px;
+}
+
+.icon-cid.icon-small {
+    background-size: 13px 12px;
+    width: 13px;
+    height: 12px;
+}
+
+.page-header {
+    padding-top: @page-header-padding-top;
+}
